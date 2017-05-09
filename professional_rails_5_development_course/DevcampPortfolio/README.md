@@ -1,24 +1,11 @@
-# Devcamp Portfolio
+# Devcamp Portfolio Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is a RoR 5 Application that allows users to create their own porfolios. Created in tandem with the
+Professional Rails 5 Development Course on Udemy
 
-Things you may want to cover:
+### Features
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Real time chat engine for comments
+- Blog
+- Portfolio
+- Drag and drop interface
