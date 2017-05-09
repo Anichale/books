@@ -12,3 +12,7 @@
 * Information Architecture
 * Don't Make Me Think
 * Tools of Titans
+* The Joy of X
+
+# Online Courses
+* Professional Rails 5 Development Course
