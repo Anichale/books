@@ -37,5 +37,21 @@ IO.puts fizz_buzz.(13)
 IO.puts fizz_buzz.(14)
 IO.puts fizz_buzz.(15)
 IO.puts fizz_buzz.(16)
-
 #=> Buzz, 11, Fizz, 13, 14, FizzBuzz, 16
+
+
+# Functions-4 Currying!
+prefix = fn p ->
+  fn name -> "#{p} #{name}" end
+end
+
+agent = prefix.("James").("Bond")
+IO.puts agent #=> James Bond
+
+
+# Functions-5
+# Rewrite the following with the & operator
+# Enum.map [1,2,3,4], fn x -> x + 2 end
+Enum.map [1,2,3,4], &(&1 + 2)
+# Enum.each [1,2,3,4], fn x -> IO.inspect x end
+Enum.map [1,2,3,4], &(IO.inspect(&1))
