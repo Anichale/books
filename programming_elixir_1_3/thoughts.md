@@ -33,4 +33,6 @@
 - i like this - `divrem = &{ div(&1, &2), rem(&1, &2) }` particularly because tuples are good response types and this packages them nicely
 
 ### Chapter 6 - Modules and Named Functions - In Progress
-- using modules and functions as clauses makes recursion feel clean
+- using modules and functions as clauses makes recursion feel cleaner
+- guards make pattern matching look more explicit
+- having erlang libraries around to utilize can be very powerful. Although I'm sure most use cases are covered by the standard Elixir modules
