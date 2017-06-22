@@ -32,7 +32,13 @@
 - the & Notation is another great example of elixir being a well-design and fully-featured language
 - i like this - `divrem = &{ div(&1, &2), rem(&1, &2) }` particularly because tuples are good response types and this packages them nicely
 
-### Chapter 6 - Modules and Named Functions - In Progress
+### Chapter 6 - Modules and Named Functions
 - using modules and functions as clauses makes recursion feel cleaner
 - guards make pattern matching look more explicit
 - having erlang libraries around to utilize can be very powerful. Although I'm sure most use cases are covered by the standard Elixir modules
+
+### Chapter 7 - Lists and Recursion
+- recursion and pattern matching go hand in hand like peas and carrots
+- the pipe character in lists is one of my favorite tools, i wish every language had something similar
+- reimplementing typical array/list like methods like map and reduce is a great functional exercise, and it makes you appreciate the work that goes into the tools that can be taken for granted in any language
+- pattern matching and recursion as core tools of the language force you to think differently about implementation, especially coming from imperative-style languages

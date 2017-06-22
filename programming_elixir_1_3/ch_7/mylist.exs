@@ -2,7 +2,6 @@ defmodule MyList do
   def add([], _x), do: []
   def add([ head | tail ], x), do: [ head + x | add(tail, x) ]
 
-
   @phoentic_char_begin 97
   @phoentic_char_end 123
   def caesar([], _n), do: []
@@ -34,6 +33,10 @@ defmodule MyList do
   def reduce([], acc, _), do: acc
   def reduce([ head | tail ], acc, func), do: reduce(tail, func.(head, acc), func)
 
+  def span(from, to) when from < to, do: List.flatten [ from, span(from + 1, to) ]
+  def span(from, to) when from > to, do: List.flatten [ from, span(from - 1, to) ]
+  def span(from, to) when from == to, do: to
+
   def square([]), do: []
   def square([ head | tail ]), do: ([ head * head | square(tail) ])
 
@@ -46,5 +49,6 @@ defmodule MyList do
     condense_add(head, tail)
     |> sum_without_accumulator
   end
+
   defp condense_add(value, [ head | tail ]), do: [ value + head | tail ]
 end
