@@ -42,3 +42,7 @@
 - the pipe character in lists is one of my favorite tools, i wish every language had something similar
 - reimplementing typical array/list like methods like map and reduce is a great functional exercise, and it makes you appreciate the work that goes into the tools that can be taken for granted in any language
 - pattern matching and recursion as core tools of the language force you to think differently about implementation, especially coming from imperative-style languages
+
+### Chapter 8 - Maps, Keyword Lists, Sets, and Structs
+- structs can be useful to enforce data shapes or requirements, but can be easily abused in an object-oriented fashion so it should be used with caution and consideration
+- the Access module is an interesting functional approach to accessing the data structures in elixir, apposed to typical dot-notation or bracket-notation that can normally be found in OOP languages. It forces you, like most of the Elixir language, to re-map existing mental models of how we treat data.
