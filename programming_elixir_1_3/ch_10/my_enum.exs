@@ -19,6 +19,15 @@ defmodule MyEnum do
   end
   def filter([], _func), do: []
 
+  def flatten([ head | tail ]) do
+    if is_list(head) do
+      flatten(head) ++ flatten(tail)
+    else
+      [head] ++ flatten(tail)
+    end
+  end
+  def flatten([]), do: []
+
   def split(list, count), do: split(list, count, [])
   def split([ head | tail ], count, acc) when count > 0 do
     split(tail, count - 1, acc ++ [head])
