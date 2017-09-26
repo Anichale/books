@@ -1,0 +1,1 @@
+<h1>My name is <%= String.upcase @name %>, and I'm a pretty girl.</h1>
